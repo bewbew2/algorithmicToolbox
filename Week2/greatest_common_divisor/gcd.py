@@ -16,7 +16,7 @@ def gcd_euclid(a_value, b_value):
     if b_value == 0:
         return a_value
     quotient, remainder = divmod(a_value, b_value)
-    return gcd_euclid(quotient, remainder)
+    return gcd_euclid(b_value, remainder)
 
 
 if __name__ == "__main__":
