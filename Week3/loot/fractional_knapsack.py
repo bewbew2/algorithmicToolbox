@@ -22,7 +22,7 @@ def get_optimal_value(capacity, weights, values):
 
 
 if __name__ == "__main__":
-    print("Hello. enter number and capacity")
+    # print("Hello. enter number and capacity")
     data = list(map(int, sys.stdin.read().split()))
     n, capacity = data[0:2]
     values = data[2:(2 * n + 2):2]
