@@ -1,0 +1,32 @@
+ways[i, j] = 0
+if T[i, j] == T[i - 1, j] + 1:
+  ways[i, j] += ways[i - 1, j]
+if T[i, j] == T[i, j - 1] + 1:
+  ways[i, j] += ways[i, j - 1]
+if word1[i] == word2[j] and T[i, j] == T[i - 1, j - 1]:
+  ways[i, j] += ways[i - 1, j - 1]
+if T[i, j] == T[i - 1, j - 1] + 1:
+  ways[i, j] += ways[i - 1, j - 1]
+
+
+ways[i, j] = 0
+if T[i, j] == T[i - 1, j] + 1:
+  ways[i, j] += ways[i - 1, j]
+if T[i, j] == T[i, j - 1] + 1:
+  ways[i, j] += ways[i, j - 1]
+
+
+ways[i, j] = 0
+if T[i, j] == T[i - 1, j] + 1:
+  ways[i, j] += ways[i - 1, j]
+if T[i, j] == T[i, j - 1] + 1:
+  ways[i, j] += ways[i, j - 1]
+if word1[i] == word2[j] and T[i, j] == T[i - 1, j - 1]:
+  ways[i, j] += ways[i - 1, j - 1]
+
+
+ways[i, j] = 0
+ways[i, j] += ways[i - 1, j]
+ways[i, j] += ways[i, j - 1]
+ways[i, j] += ways[i - 1, j - 1]
+ways[i, j] += ways[i - 1, j - 1]
